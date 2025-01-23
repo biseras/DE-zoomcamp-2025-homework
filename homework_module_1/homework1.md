@@ -35,6 +35,7 @@ WHERE lpep_pickup_datetime >= '2019-10-01'
   AND trip_distance <= 1; 
 ```
 **104 802**
+
 2. In between 1 (exclusive) and 3 miles (inclusive),
 ```sql 
 SELECT COUNT(*) 
@@ -44,6 +45,7 @@ WHERE lpep_pickup_datetime >= '2019-10-01'
   AND trip_distance > 1 AND trip_distance <= 3;
 ``` 
 **198 924**
+
 3. In between 3 (exclusive) and 7 miles (inclusive),
 ```sql 
 SELECT COUNT(*)
@@ -53,6 +55,7 @@ WHERE lpep_pickup_datetime >= '2019-10-01'
   AND trip_distance >3  AND trip_distance <= 7;
 ``` 
 **109 603**
+
 4. In between 7 (exclusive) and 10 miles (inclusive)
 ```sql 
 SELECT COUNT(*)
@@ -62,6 +65,7 @@ WHERE lpep_pickup_datetime >= '2019-10-01'
   AND trip_distance > 7 AND trip_distance <= 10;
 ``` 
 **27 678**
+
 5. Over 10 miles
 ```sql 
 SELECT COUNT(*)
