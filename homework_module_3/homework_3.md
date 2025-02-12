@@ -24,7 +24,9 @@ SELECT COUNT(DISTINCT PULocationID) FROM taxirec.yellow_taxi_m;
 
 Question 3:
 Write a query to retrieve the PULocationID from the table (not the external table) in BigQuery. Now write a query to retrieve the PULocationID and DOLocationID on the same table. Why are the estimated number of Bytes different?
+
 **BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.**
+
 ---
 
 Question 4:
